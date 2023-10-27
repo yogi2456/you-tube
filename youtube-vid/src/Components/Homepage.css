@@ -1,0 +1,16 @@
+.navbar {
+    width: 82%;
+    height: 130px;
+    background-color: black;
+    margin-left: 18%;
+    display: flex;
+}
+.navbar1 {
+    width: 350px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    margin-left: 200px;
+}
