@@ -46,6 +46,33 @@ function Homepage() {
       views: "720k views",
       time: "4 days ago"
     }, ])
+
+    const [videos, setVideos] = useState([
+      {
+        name: "New vs old phone are you the same",
+        image: "https://i.ytimg.com/vi/2zQPaXYnEVo/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=",
+        views: "4.4M views"
+      },
+      {
+        name: "Lo jeet Gaye Tum Hum Se Dance",
+        image: "https://i.ytimg.com/vi/swuRpLvdgnc/hq720.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=",
+        views: "14M views"
+      },
+      {
+        name: "Ganesh Craying jai bolo ganesh",
+        image: "https://i.ytimg.com/vi/mdv6jcFr3WA/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=",
+        views: "1.7M views"
+      },
+      {
+        name: "Jailer vs Pushpa",
+        image: "https://i.ytimg.com/vi/-UqIGHNNfNE/hq720.jpg?sqp=-oaymwEdCJcDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=",
+        views: "835k views"
+      },
+      {
+        name: "Paris you love",
+        image: "https://i.ytimg.com/vi/zQcMo2k6ADc/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=",
+        views: "14M views"
+      },])
   return (
     <>
       <div>
@@ -124,19 +151,105 @@ function Homepage() {
             <div>You</div>
             <div><i class="fa-solid fa-chevron-right" style={{color: "#f4f7fa"}}></i></div>
           </div>
-          <div></div>
+          <div className='sidebar7'>
+            <div><i class="fa-solid fa-user" style={{color: "#f0f2f4"}}></i></div>
+            <div>
+              <p>Your channel</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-clock-rotate-left" style={{color: "#e8eaee"}}></i></div>
+            <div>
+              <p>History</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-regular fa-circle-play" style={{color: "#f4f5f6"}}></i></div>
+            <div>
+              <p>Your videos</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-regular fa-clock" style={{color: "#eeeff2"}}></i></div>
+            <div>
+              <p>Watch later</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-regular fa-thumbs-up" style={{color: "#ededee"}}></i></div>
+            <div>
+              <p>Liked videos</p>
+            </div>
+          </div>
+          <div className='sidebar5'></div>
+          <h2>Explore</h2>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-bag-shopping" style={{color: "#ebecf0"}}></i></div>
+            <div>
+              <p>Shopping bag</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-music" style={{color: "#f3f4f7"}}></i></div>
+            <div>
+              <p>Music</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-clapperboard" style={{color: "#edeff3"}}></i></div>
+            <div>
+              <p>Movies</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-satellite-dish" style={{color: "#f0f2f5"}}></i></div>
+            <div>
+              <p>Live</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-vr-cardboard" style={{color: "#f0f2f4"}}></i></div>
+            <div>
+              <p>Gaming</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-baseball" style={{color: "#e6e7eb"}}></i></div>
+            <div>
+              <p>Sports</p>
+            </div>
+          </div>
+          <div className='sidebar8'>
+            <div><i class="fa-solid fa-newspaper" style={{color: "#eceff3"}}></i></div>
+            <div>
+              <p>News</p>
+            </div>
+          </div>
         </div>
-
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", backgroundColor: "black" }}>
+<div className='sidebar9'>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", marginLeft: "19%", marginTop: "-500px", backgroundColor: "black" }}>
     {products.map((pro) => (
-        <div style={{  width: "30%", height: "550px", marginBottom: "50px", borderRadius:"20px",}}>
-            <p style={{textAlign: "left", marginLeft: "20px"}}>{pro.name}</p>
-            <h1 style={{textAlign: "left", marginLeft: "20px"}}>{pro.heading}</h1>
-            <img style={{ width: "80%", height: "250px", paddingTop: "20px" }} src={pro.image} />
-            <h5 style={{fontSize: "18px"}}>{pro.paragraph}</h5>
+        <div style={{  width: "30%", height: "350px", marginBottom: "50px", borderRadius:"20px"}}>
+            <img style={{ width: "100%", height: "250px", borderRadius: "20px" }} src={pro.image} />
+            <div style={{display: "flex"}}>
+              <img style={{width: "40px", height: "40px", borderRadius: "50%", border: "1px solid white", marginTop: "15px", marginLeft: "10px"}} src={pro.pImage} />
+              <p style={{fontSize: "20px", color: "white", marginLeft: "20px"}}>{pro.name}</p>
+            </div>
+            <p style={{color: "white", textAlign: "left", marginLeft: "70px", marginTop: "-15px"}}>{pro.views}</p>
+            <p style={{color: "white", textAlign: "left", marginLeft: "70px", marginTop: "-15px"}}>{pro.time}</p>
         </div>
     ))}
 </div> 
+
+         <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around", marginLeft: "18%", background: "black"}}>
+          {videos.map((video) => (
+          <div style={{ width: "18%", height: "550px", borderRadius: "20px"}}>
+            <img style={{width: "100%", height: "100%", borderRadius: "20px, 20px, 0px, 0px", objectFit: "cover"}} src={video.image} />
+            <h2 style={{color: "white", textAlign: "left", fontSize: "18px"}}>{video.name}</h2>
+            <p style={{color: "white", textAlign: "left", fontSize: "16px"}}>{video.views}</p>
+          </div>))}
+         </div>
+</div>         
         </div>
       </div>
     </>
