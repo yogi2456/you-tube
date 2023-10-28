@@ -8,7 +8,7 @@ function Homepage() {
         <div className='navbar'>
             <div className='navbar1'>
                 <div>
-                    <input />
+                    <input  placeholder='Search'/>
                 </div>
                 <div>
                     <i class="fa-solid fa-magnifying-glass" style={{color: "#707070"}}></i>
