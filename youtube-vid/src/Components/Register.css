@@ -1,0 +1,111 @@
+.register {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    position: fixed;
+}
+.register1 {
+    width: 30%;
+    margin: auto;
+    height: 560px;
+    margin-top: 80px;
+    border: 1px solid gray;
+}
+.register2 {
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.register2 > h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.register2 > p {
+    margin-top: -15px;
+    font-size: 18px;
+}
+.register3 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.register3 > p {
+    text-align: left;
+    margin-top: 12px;
+    font-size: 18px;
+    color: black;
+    margin-left: 15px;
+}
+.register4 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.register4 > p {
+    text-align: left;
+    margin-top: 12px;
+    font-size: 18px;
+    color: black;
+    margin-left: 15px;
+}
+.register5 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.register5 > p {
+    text-align: left;
+    margin-top: 12px;
+    font-size: 18px;
+    color: black;
+    margin-left: 15px;
+}
+.register6 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.register6 > p {
+    text-align: left;
+    margin-top: 12px;
+    font-size: 18px;
+    color: black;
+    margin-left: 15px;
+}
+.register2 > button {
+    width: 80px;
+    height: 40px;
+    background-color: #1A73E8;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 80%;
+    margin-top: 30px;
+}
+.register7 {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.register8 {
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+}
+.register9 {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}

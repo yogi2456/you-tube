@@ -240,7 +240,7 @@ function Homepage() {
         </div>
     ))}
 </div> 
-
+        <h2 style={{color: "white" , textAlign: "left", marginLeft: "290px", fontSize: "30px"}}>Shorts</h2>
          <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around", marginLeft: "18%", background: "black"}}>
           {videos.map((video) => (
           <div style={{ width: "18%", height: "550px", borderRadius: "20px"}}>
