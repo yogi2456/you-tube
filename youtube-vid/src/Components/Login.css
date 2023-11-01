@@ -32,12 +32,14 @@
     margin-top: 30px;
     opacity: 0.5;
 }
-.login3 > p {
+.login3 > input {
     text-align: left;
     margin-top: 12px;
     font-size: 18px;
     color: black;
-    margin-left: 15px;
+    margin-right: 140px;
+    border: none;
+    outline: none;
 }
 .login4 {
     color: #1A73E8;
@@ -53,12 +55,14 @@
     margin-top: 20px;
     opacity: 0.5;
 }
-.login5 > p {
+.login5 > input {
     text-align: left;
     margin-top: 12px;
     font-size: 18px;
     color: black;
-    margin-left: 15px;
+    margin-right: 140px;
+    border: none;
+    outline: none;
 }
 .login6 {
     text-align: left;

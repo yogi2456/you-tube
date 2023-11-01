@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import './Homepage.css'
+import { useNavigate } from "react-router-dom";
 
 function Homepage() {
+
+  const router = useNavigate();
 
   const [products, setProducts] = useState([
     {
@@ -95,8 +98,8 @@ function Homepage() {
             <div className='navbar4'>
                 <i class="fa-regular fa-bell fa-xl" style={{color: "#dbdbdc"}}></i>
             </div>
-            <div className='navbar5'>
-              <p>Y</p>
+            <div onClick={() => router(`/login`)} className='navbar5'>
+              <i class="fa-solid fa-user" style={{color: "#fafcff"}}></i>
             </div>
             </div>
 

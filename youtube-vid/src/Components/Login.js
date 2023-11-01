@@ -10,11 +10,11 @@ function Login() {
             <h2>Login</h2>
             <p>to continue to yotube</p>
             <div className='login3'>
-                <p>Email or phone</p>
+                <input placeholder='Email or phone'/>
             </div>
             <p className='login4'>Forget email?</p>
             <div className='login5'>
-                <p>Password</p>
+                <input placeholder='Password'/>
             </div>
             <p className='login4'>Forget Password?</p>
             <div className='login6'>

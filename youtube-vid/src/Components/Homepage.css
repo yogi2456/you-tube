@@ -69,9 +69,9 @@
     margin-top: 15px;
     margin-left: 15px;
 }
-.navbar5 > p {
-    margin-top: 3px;
-    font-size: 16px;
+.navbar5 > i {
+    margin-top: 7px;
+    font-size: 15px;
 }
 .navbar6 {
     display: flex;
