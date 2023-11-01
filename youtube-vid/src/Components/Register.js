@@ -1,7 +1,10 @@
 import React from 'react'
 import './Register.css'
+import { useNavigate } from 'react-router-dom'
 
 function Register() {
+
+  const router = useNavigate();
   return (
     <div>
       <div className='register'>
@@ -10,18 +13,18 @@ function Register() {
             <h2>Create a Google Account</h2>
             <p>Enter your name</p>
             <div className='register3'>
-                <p>First name</p>
+                <input placeholder='First name'/>
             </div>
             <div className='register4'>
-                <p>Last name (Optional)</p>
+                <input placeholder='Last name (Optional)'/>
             </div>
             <div className='register5'>
-                <p>Email or phone</p>
+                <input placeholder='Email or phone'/>
             </div>
             <div className='register6'>
-                <p>Password</p>
+                <input placeholder='Password'/>
             </div>
-            <button>Next</button>
+            <button onClick={ () => router(`/login`)}>Next</button>
             </div>
         </div>
 

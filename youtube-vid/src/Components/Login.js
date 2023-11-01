@@ -1,13 +1,16 @@
 import React from 'react'
 import './Login.css'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
+
+  const router = useNavigate();
   return (
     <div>
       <div className='login'>
         <div className='login1'>
             <div className='login2'>
-            <h2>Login</h2>
+            <h2>Sign in</h2>
             <p>to continue to yotube</p>
             <div className='login3'>
                 <input placeholder='Email or phone'/>
@@ -22,8 +25,8 @@ function Login() {
                 <p>Learn more</p>
             </div>
             <div className='login7'>
-                <p>Create account</p>
-                <button>Next</button>
+                <p onClick={ () => router(`/register`)}>Create account</p>
+                <button onClick={() => router(`/`)}>Next</button>
             </div>
             </div>
         </div>

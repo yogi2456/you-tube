@@ -32,12 +32,15 @@
     margin-top: 30px;
     opacity: 0.5;
 }
-.register3 > p {
+.register3 > input {
     text-align: left;
     margin-top: 12px;
     font-size: 18px;
     color: black;
     margin-left: 15px;
+    margin-right: 150px;
+    border: none;
+    outline: none;
 }
 .register4 {
     width: 100%;
@@ -46,12 +49,15 @@
     margin-top: 30px;
     opacity: 0.5;
 }
-.register4 > p {
+.register4 > input {
     text-align: left;
     margin-top: 12px;
     font-size: 18px;
     color: black;
     margin-left: 15px;
+    margin-right: 150px;
+    border: none;
+    outline: none;
 }
 .register5 {
     width: 100%;
@@ -60,12 +66,15 @@
     margin-top: 30px;
     opacity: 0.5;
 }
-.register5 > p {
+.register5 > input {
     text-align: left;
     margin-top: 12px;
     font-size: 18px;
     color: black;
     margin-left: 15px;
+    margin-right: 150px;
+    border: none;
+    outline: none;
 }
 .register6 {
     width: 100%;
@@ -74,12 +83,15 @@
     margin-top: 30px;
     opacity: 0.5;
 }
-.register6 > p {
+.register6 > input {
     text-align: left;
     margin-top: 12px;
     font-size: 18px;
     color: black;
     margin-left: 15px;
+    margin-right: 150px;
+    border: none;
+    outline: none;
 }
 .register2 > button {
     width: 80px;
