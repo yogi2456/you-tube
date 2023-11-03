@@ -199,20 +199,11 @@
     height: 700px;
     background-color: black;
     margin-top: -130px;
-    /* position: sticky;
-    left: 0;
-    top: 0;
-    scroll-behavior: auto; */
-    /* position: static; */
-    /* overflow: auto; */
 }
 .sidebar1 {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    /* position: sticky;
-    top: 0;
-    left: 0; */
 }
 .sidebar1 > div:nth-child(1) {
     margin-left: 30px;
