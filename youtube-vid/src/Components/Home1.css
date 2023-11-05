@@ -73,27 +73,21 @@
     margin-top: 7px;
     font-size: 15px;
 }
-.sidebaar {
+.bar {
     width: 18%;
     height: 80px;
     background-color: black;
     margin-top: -80px;
-    position: sticky;
-    left: 0;
-    top: 0;
 }
-.sidebaar1 {
+.bar1 {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    /* position: sticky;
-    top: 0;
-    left: 0; */
 }
-.sidebaar1 > div:nth-child(1) {
+.bar1 > div:nth-child(1) {
     margin-left: 30px;
 }
-.sidebaar1 > div:nth-child(2) {
+.bar1 > div:nth-child(2) {
     margin-right: 30px;
 }
 .leftright {
