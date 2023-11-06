@@ -78,6 +78,14 @@ function Home1() {
     <div>
         <div className='navbar'>
        <div className='navbarr'>
+       {/* <div className='bar'>
+        <div className='bar1'>
+            <div><i class="fa-solid fa-bars fa-xl" style={{color: "#fcfcfd"}}></i></div>
+            <div>
+              <img style={{width: "50%", height: "80%"}} src='https://www.gstatic.com/youtube/img/promos/growth/7a4b9bd20cc245474ee2f5fa265c92410480b3e49f72a5342ccfeeb442905946_318x72.png'/>
+            </div>
+          </div>
+        </div> */}
             <div className='navbar1'>
                 <div>
                     <input  placeholder='Search'/>

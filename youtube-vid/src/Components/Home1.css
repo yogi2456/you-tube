@@ -78,6 +78,9 @@
     height: 80px;
     background-color: black;
     margin-top: -80px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .bar1 {
     display: flex;
