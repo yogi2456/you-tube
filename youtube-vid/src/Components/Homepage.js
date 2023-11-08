@@ -128,6 +128,7 @@ function Homepage() {
             </div>
             {/* <p style={{color: "white"}}>color</p> */}
           </div>
+          <div className='class'>
           <div className='sidebar2'>
             <div><i class="fa-solid fa-house" style={{color: "#edf1f7"}}></i></div>
             <div>
@@ -228,6 +229,7 @@ function Homepage() {
             <div>
               <p>News</p>
             </div>
+          </div>
           </div>
         </div>
 <div className='sidebar9'>

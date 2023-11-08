@@ -204,6 +204,9 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    position: sticky;
+    left: 0;
+    top: 0;
 }
 .sidebar1 > div:nth-child(1) {
     margin-left: 30px;
@@ -302,7 +305,7 @@
     width: 80%;
     margin: auto;
     display: flex;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 .sidebar8 > div:nth-child(1){
     margin-left: 25px;
@@ -314,7 +317,7 @@
     color: white;
     margin-top: -22px;
 }
-.sidebar > h2 {
+.class > h2 {
     font-size: 22px;
     color: white;
     text-align: left;

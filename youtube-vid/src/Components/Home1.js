@@ -123,7 +123,7 @@ function Home1() {
         <div className='leftright'>
             <div className='leftright1'>
             <div className='left'>
-                <div className='leftl'><img style={{width: "100%", height: "100%", borderRadius: "20px"}} src='https://i.ytimg.com/vi/VAdGW7QDJiU/maxresdefault.jpg'/></div>
+                <div className='leftl'><img style={{width: "100%", height: "100%", borderRadius: "20px"}} src='https://i.ytimg.com/vi/5UFEWUPbPUY/maxresdefault.jpg'/></div>
                 <h2>JAWAN: Chaleya (Hindi) | Shah Rukh Khan | Nayanthara | Atlee | Anirudh | Arijit S, Shilpa R | Kumaar</h2>
                 <div className='left1'>
                     <div className='left2'>
