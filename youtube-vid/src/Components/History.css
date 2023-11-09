@@ -1,0 +1,224 @@
+.navbar20 {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.navbarr21 {
+    display: flex;
+}
+.bar19 {
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    padding-top: 23px;
+}
+.bar19 > div:nth-child(1) {
+    margin-left: 30px;
+}
+.bar19 > div:nth-child(2) {
+    margin-right: 100px;
+}
+.navbar22 {
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #222222;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+.navbar22 > div:nth-child(1) {
+    padding-left: 10px;
+    margin-top: 8px;
+}
+.navbar22 > div:nth-child(1) > input {
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.navbar22 > div:nth-child(2) {
+    width: 60px;
+    height: 40px;
+    background-color: #222222;
+    border-radius: 0px 15px 15px 0px;
+}
+.navbar22 > div:nth-child(2) > i {
+    margin-top: 13px;
+}
+.navbar23 {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222222;
+    margin-top: 10px;
+}
+.navbar23 > i {
+    margin-top: 12px;
+}
+.navbar24 {
+    margin-left: 250px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+.navbar25 {
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+.navbar26 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.navbar26 > i {
+    margin-top: 7px;
+    font-size: 15px;
+}
+.class {
+    width: 18%;
+    height: 750px;
+    background-color: black;
+    /* overflow-y: scroll; */
+    padding-top: 20px;
+}
+.sidebar21 {
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    /* background-color: #222222; */
+    display: flex;
+    justify-content: space-between;
+    /* border-radius: 10px; */
+}
+.sidebar21:hover {
+    width: 80%;
+    background-color: #222222;
+    border-radius: 10px;
+}
+.sidebar21 > div:nth-child(1) {
+    margin-left: 25px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+.sidebar21 > div:nth-child(2) {
+    margin-right: 80px;
+    margin-top: -15px;
+    font-size: 20px;
+    color: white;
+}
+.sidebar22 {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/* .sidebar22:hover {
+    width: 80%;
+    background-color: #222222;
+    border-radius: 10px;
+    height: 40px;
+} */
+.sidebar22 > div:nth-child(2) {
+    margin-right: 80px;
+    font-size: 20px;
+    color: white;
+    margin-top: -25px;
+}
+.sidebar23 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+/* .sidebar23:hover {
+    width: 80%;
+    background-color: #222222;
+    border-radius: 10px;
+    margin-top: -10px;
+} */
+.sidebar23 > div:nth-child(2) {
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+    margin-top: -25px;
+}
+.sidebar24 {
+    width: 90%;
+    margin: auto;
+    border: 1px solid gray;
+}
+.sidebar25 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+.sidebar25:hover {
+    width: 80%;
+    background-color: #222222;
+    border-radius: 10px;
+}
+.sidebar25 > div:nth-child(1) {
+    color: white;
+    font-size: 20px;
+    margin-left: 25px;
+}
+.sidebar25 > div:nth-child(2) {
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.sidebar26 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+.sidebar26 > div:nth-child(1){
+    margin-left: 25px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.sidebar26 > div:nth-child(2) {
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+    margin-top: -22px;
+}
+.sidebar27 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 0px;
+}
+.sidebar27 > div:nth-child(1){
+    margin-left: 25px;
+    font-size: 25px;
+}
+.sidebar27 > div:nth-child(2) {
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+    margin-top: -22px;
+}
+.history {
+    width: 82%;
+    margin-left: 18%;
+    background-color: black;
+    height: 500px;
+    margin-top: -720px;
+}

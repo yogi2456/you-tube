@@ -162,7 +162,7 @@ function Homepage() {
               <p>Your channel</p>
             </div>
           </div>
-          <div className='sidebar8'>
+          <div onClick={() => router(`/history`)} className='sidebar8'>
             <div><i class="fa-solid fa-clock-rotate-left" style={{color: "#e8eaee"}}></i></div>
             <div>
               <p>History</p>
