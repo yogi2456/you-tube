@@ -215,111 +215,65 @@
     color: white;
     margin-top: -22px;
 }
-.history {
-    width: 55%;
+.profile {
+    width: 82%;
     margin-left: 18%;
     background-color: black;
-    /* height: 1500px; */
-    margin-top: -1600px;
+    height: 2000px;
+    margin-top: -1590px;
 }
-.history1 {
+.profile1 {
     width: 80%;
     margin: auto;
-    height: 850px;
-    border: 1px solid black;
+    border: 1px solid blue;
+    height: 2000px;
 }
-.history1 > h1 {
-    color: white;
-    text-align: left;
-    margin-top: 50px;
-    font-size: 40px;
-    font-weight: 500;
-}
-.history1 > h2 {
-    color: white;
-    text-align: left;
-    margin-top: 50px;
-    font-size: 20px;
-    font-weight: 500;
-}
-.history2 {
-    width: 80%;
-    margin: auto;
-    height: 730px;
-    /* border: 1px solid blue; */
-}
-.history2 > h2 {
-    color: white;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 500;
-}
-.story {
-    height: 1591px;
-    width: 27%;
-    margin-left: 73%;
-    background-color: black;
-    margin-top: -1591px;
-}
-.story1 {
-    width: 90%;
-    height: 500px;
-    border: 1px solid black;
-}
-.story2 {
+.profile2 {
     display: flex;
-    margin-top: 150px;
 }
-.story2 > i {
-    margin-left: 10px;
-    font-size: 20px;
+.profile3 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #7A1FA2;
+    margin-top: 20px;
 }
-.story2 > input {
+.profile3 > p {
+    font-size: 90px;
+    margin-top: 0px;
+    color: white;
+    font-weight: 500;
+}
+.profile4 {
     margin-left: 20px;
-    background-color: black;
+}
+.profile4 > h1 {
+    font-size: 40px;
+    color: white;
+}
+.profile4 > p {
+    color: white;
+    font-size: 12px;
+    margin-top: -20px;
+    text-align: left;
+}
+.profile5 {
+    display: flex;
+}
+.profile5 > button:nth-child(1) {
+    width: 120px;
+    height: 30px;
+    background-color: #272727;
+    border-radius: 20px;
     color: white;
     border: none;
-    outline: none;
-    font-size: 16px;
 }
-.story3 {
-    border: 1px solid white;
-    width: 70%;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-.story4 {
-    display: flex;
-    margin-top: 60px;
-}
-.story4 > i {
+.profile5 > button:nth-child(2) {
+    width: 120px;
+    height: 30px;
+    background-color: #272727;
+    border-radius: 20px;
+    color: white;
+    border: none;
     margin-left: 10px;
-    font-size: 20px;
-}
-.story4 > p {
-    font-size: 16px;
-    color: white;
-    margin-left: 20px;
-    margin-top: 0;
-}
-.story5 {
-    display: flex;
-    margin-top: 20px;
-}
-.story5 > i {
-    margin-left: 12px;
-    font-size: 20px;
-}
-.story5 > p {
-    font-size: 16px;
-    color: white;
-    margin-left: 20px;
-    margin-top: 0;
-}
-.story6 {
-    color: white;
-    margin-top: 15px;
-    text-align: left;
-    margin-left: 55px;
 }
