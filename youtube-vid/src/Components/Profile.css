@@ -219,14 +219,14 @@
     width: 82%;
     margin-left: 18%;
     background-color: black;
-    height: 2000px;
+    height: 1590px;
     margin-top: -1590px;
 }
 .profile1 {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    border: 1px solid blue;
-    height: 2000px;
+    /* border: 1px solid blue; */
+    height: 1580px;
 }
 .profile2 {
     display: flex;
@@ -295,6 +295,32 @@
 }
 .profile6 > p {
     font-size: 16px;
-    margin-left: 800px;
+    margin-left: 920px;
+    color: blue;
+}
+.profile7 {
+    border: 1px solid gray;
+    margin-top: 280px;
+    opacity: 0.3;
+}
+.profile8 {
+    display: flex;
+    margin-top: 40px;
+    text-align: left;
+}
+.profile8 > i {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.profile8 > h2 {
+    font-size: 22px;
+    margin-top: -5px;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.profile8 > p {
+    font-size: 16px;
+    margin-left: 870px;
     color: blue;
 }

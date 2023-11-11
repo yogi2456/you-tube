@@ -93,7 +93,7 @@ function History() {
             <div className='navbar25'>
                 <i class="fa-regular fa-bell fa-xl" style={{color: "#dbdbdc"}}></i>
             </div>
-            <div className='navbar26'>
+            <div onClick={() => router(`/login`)} className='navbar26'>
               <i class="fa-solid fa-user" style={{color: "#fafcff"}}></i>
             </div>
             </div>
@@ -124,7 +124,7 @@ function History() {
             </div>
           </div>
           <div className='sidebar24'></div>
-          <div className='sidebar25'>
+          <div onClick={() => router(`/profile`)} className='sidebar25'>
             <div>You</div>
             <div><i class="fa-solid fa-chevron-right" style={{color: "#f4f7fa"}}></i></div>
           </div>

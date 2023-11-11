@@ -1,77 +1,45 @@
 .navbar {
-    width: 82%;
-    height: 130px;
+    width: 100%;
+    height: 140px;
     background-color: black;
-    margin-left: 18%;
     position: sticky;
     top: 0;
     left: 0;
 }
-.navbarr {
+.navbarr31 {
     display: flex;
 }
-.navbar1 {
-    width: 600px;
-    height: 40px;
-    border-radius: 20px;
+.bar32 {
     display: flex;
     justify-content: space-between;
-    border: 2px solid #222222;
-    margin-left: 180px;
-    margin-top: 10px;
+    width: 18%;
+    padding-top: 23px;
 }
-.navbar1 > div:nth-child(1) {
-    padding-left: 10px;
-    margin-top: 8px;
+.bar32 > div:nth-child(1) {
+    margin-left: 30px;
 }
-.navbar1 > div:nth-child(1) > input {
+.bar32 > div:nth-child(2) {
+    margin-right: 100px;
+}
+.bar11 {
+    width: 18%;
+    height: 80px;
     background-color: black;
-    border: none;
-    font-size: 16px;
-    outline: none;
+    margin-top: -155px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
-.navbar1 > div:nth-child(2) {
-    width: 60px;
-    height: 40px;
-    background-color: #222222;
-    border-radius: 0px 15px 15px 0px;
+.bar12 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
 }
-.navbar1 > div:nth-child(2) > i {
-    margin-top: 13px;
+.bar12 > div:nth-child(1) {
+    margin-left: 30px;
 }
-.navbar2 {
-    margin-left: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #222222;
-    margin-top: 10px;
-}
-.navbar2 > i {
-    margin-top: 10px;
-}
-.navbar3 {
-    margin-left: 250px;
-    margin-top: 20px;
-    font-size: 14px;
-}
-.navbar4 {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 14px;
-}
-.navbar5 {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: blueviolet;
-    color: white;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.navbar5 > i {
-    margin-top: 7px;
-    font-size: 15px;
+.bar12 > div:nth-child(2) {
+    margin-right: 30px;
 }
 .navbar6 {
     display: flex;
@@ -195,31 +163,17 @@
     background-color: black;
 }
 .sidebar {
-    width: 18%;
+    width: 100%;
     height: 700px;
     background-color: black;
-    margin-top: -80px;
-}
-.sidebar1 {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    position: sticky;
-    left: 0;
-    top: 0;
-}
-.sidebar1 > div:nth-child(1) {
-    margin-left: 30px;
-}
-.sidebar1 > div:nth-child(2) {
-    margin-right: 30px;
+    margin-top: -0px;
 }
 .sidebar2 {
     width: 80%;
     margin: auto;
     height: 40px;
     background-color: #222222;
-    margin-top: 33px;
+    margin-top: 53px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;

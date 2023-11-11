@@ -80,7 +80,13 @@ function Homepage() {
     <>
       <div>
         <div className='navbar'>
-          <div className='navbarr'>
+        <div className='navbarr'>
+        {/* <div className='bar'>
+            <div><i class="fa-solid fa-bars fa-xl" style={{color: "#fcfcfd"}}></i></div>
+            <div>
+              <img style={{width: "80%", height: "70%"}} src='https://www.gstatic.com/youtube/img/promos/growth/7a4b9bd20cc245474ee2f5fa265c92410480b3e49f72a5342ccfeeb442905946_318x72.png'/>
+            </div>
+          </div> */}
             <div className='navbar1'>
                 <div>
                     <input  placeholder='Search'/>
@@ -121,13 +127,14 @@ function Homepage() {
 
         <div className='leftside'>
         <div className='sidebar'>
-        <div className='sidebar1'>
+          <div className='bar11'>
+        <div className='bar12'>
             <div><i class="fa-solid fa-bars fa-xl" style={{color: "#fcfcfd"}}></i></div>
             <div>
               <img style={{width: "50%", height: "80%"}} src='https://www.gstatic.com/youtube/img/promos/growth/7a4b9bd20cc245474ee2f5fa265c92410480b3e49f72a5342ccfeeb442905946_318x72.png'/>
             </div>
-            {/* <p style={{color: "white"}}>color</p> */}
           </div>
+        </div>
           <div className='class'>
           <div className='sidebar2'>
             <div><i class="fa-solid fa-house" style={{color: "#edf1f7"}}></i></div>
@@ -152,7 +159,7 @@ function Homepage() {
             </div>
           </div>
           <div className='sidebar5'></div>
-          <div className='sidebar6'>
+          <div onClick={() => router(`/profile`)} className='sidebar6'>
             <div>You</div>
             <div><i class="fa-solid fa-chevron-right" style={{color: "#f4f7fa"}}></i></div>
           </div>

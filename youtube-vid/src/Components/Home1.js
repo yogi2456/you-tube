@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Home1.css'
+import { useNavigate } from 'react-router-dom'
 
 function Home1() {
 
@@ -74,6 +75,7 @@ function Home1() {
             months: "6 days ago"
         }
     ])
+    const router = useNavigate();
   return (
     <div>
         <div className='navbar'>
@@ -103,7 +105,7 @@ function Home1() {
             <div className='navbar4'>
                 <i class="fa-regular fa-bell fa-xl" style={{color: "#dbdbdc"}}></i>
             </div>
-            <div className='navbar5'>
+            <div onClick={() => router(`/login`)} className='navbar5'>
               <i class="fa-solid fa-user" style={{color: "#fafcff"}}></i>
             </div>
             </div>

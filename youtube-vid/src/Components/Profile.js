@@ -103,7 +103,7 @@ function Profile() {
             <div className='navbar25'>
                 <i class="fa-regular fa-bell fa-xl" style={{color: "#dbdbdc"}}></i>
             </div>
-            <div className='navbar26'>
+            <div onClick={() => router(`/login`)} className='navbar26'>
               <i class="fa-solid fa-user" style={{color: "#fafcff"}}></i>
             </div>
             </div>
@@ -134,7 +134,7 @@ function Profile() {
             </div>
           </div>
           <div className='sidebar24'></div>
-          <div className='sidebar25'>
+          <div onClick={() => router(`/profile`)} className='sidebar25'>
             <div>You</div>
             <div><i class="fa-solid fa-chevron-right" style={{color: "#f4f7fa"}}></i></div>
           </div>
@@ -241,20 +241,39 @@ function Profile() {
                 </div>
 
 
-                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", height: "120px", marginTop: "20px"}}>
+                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", height: "250px", marginTop: "20px"}}>
                     {royal.map((pro) => (
-                        <div style={{width: "100%", display: "flex", justifyContent: "space-between", height: "140px"}}>
-                        <div style={{width: "48%", height: "120px"}}>
-                             <img style={{width: "100%", height: "100%", borderRadius: "10px"}} src={pro.image}/>
-                        </div>
-                        <div style={{width: "48%", height: "120px", color: "white"}}>
-                            <h2 style={{fontSize: "16px", fontWeight: "bold", textAlign: "left"}}>{pro.name}</h2>
-                            <p style={{textAlign: "left", marginTop: "-5px", fontSize: "14px"}}>{pro.singer}</p>
-                            <div style={{display: "flex", marginTop: "-17px", fontSize: "14px"}}>
+                        //<div style={{width: "100%", height: "140px"}}>
+                        <div style={{width: "20%", height: "260px", color: "white"}}>
+                             <img style={{width: "96%", height: "50%", borderRadius: "10px"}} src={pro.image}/>  
+                             <h2 style={{fontSize: "14px", fontWeight: "500", textAlign: "left"}}>{pro.name}</h2>
+                            <p style={{textAlign: "left", marginTop: "-5px", fontSize: "14px", color: "gray"}}>{pro.singer}</p>
+                            <div style={{display: "flex", marginTop: "-17px", fontSize: "14px", color: "gray"}}>
                                 <p>{pro.views}</p>
                                 <p>{pro.months}</p>
                             </div>
                         </div>
+                    ))}
+                </div>
+
+                <div className='profile7'></div>
+                <div className='profile8'>
+                  <i class="fa-solid fa-clock-rotate-left" style={{color: "#e8eaee"}}></i>
+                  <h2>Watch later</h2>
+                  <p>See all</p>
+                </div>
+
+                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", height: "250px", marginTop: "20px"}}>
+                    {royal.map((pro) => (
+                        //<div style={{width: "100%", height: "140px"}}>
+                        <div style={{width: "20%", height: "260px", color: "white"}}>
+                             <img style={{width: "96%", height: "50%", borderRadius: "10px"}} src={pro.image}/>  
+                             <h2 style={{fontSize: "14px", fontWeight: "500", textAlign: "left"}}>{pro.name}</h2>
+                            <p style={{textAlign: "left", marginTop: "-5px", fontSize: "14px", color: "gray"}}>{pro.singer}</p>
+                            <div style={{display: "flex", marginTop: "-17px", fontSize: "14px", color: "gray"}}>
+                                <p>{pro.views}</p>
+                                <p>{pro.months}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
