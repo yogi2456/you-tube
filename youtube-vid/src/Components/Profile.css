@@ -277,3 +277,24 @@
     border: none;
     margin-left: 10px;
 }
+.profile6 {
+    display: flex;
+    margin-top: 40px;
+    text-align: left;
+}
+.profile6 > i {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.profile6 > h2 {
+    font-size: 22px;
+    margin-top: -5px;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.profile6 > p {
+    font-size: 16px;
+    margin-left: 800px;
+    color: blue;
+}
