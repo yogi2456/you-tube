@@ -16,7 +16,7 @@ function Homepage() {
     },
     {
       name: "Heeriye | Jasleen Royal |",
-      image: "https://i.ytimg.com/vi/3m6uiZI8xlI/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==",
+      image: "https://i.ytimg.com/vi/xUh0XL2WFBk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==",
       pImage: "https://yt3.ggpht.com/KoFByTIL52sOe__t1RKy-6OFbRW-xMcRAIF1PJHKUVik9EJxbQ28sWwX8D5NAEbogesjahg=s88-c-k-c0x00ffffff-no-rj",
       views: "45k views",
       time: "3 days ago"
