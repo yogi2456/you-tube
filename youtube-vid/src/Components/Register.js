@@ -24,7 +24,7 @@ function Register() {
             <div className='register6'>
                 <input placeholder='Password'/>
             </div>
-            <button onClick={ () => router(`/login`)}>Next</button>
+            <button onClick={ () => router(`/login`)}>Create</button>
             </div>
         </div>
 
