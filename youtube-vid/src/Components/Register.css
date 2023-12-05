@@ -1,13 +1,12 @@
 .register {
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-color: white;
-    position: fixed;
 }
 .register1 {
     width: 30%;
     margin: auto;
-    height: 560px;
+    height: 620px;
     margin-top: 80px;
     border: 1px solid gray;
 }
@@ -17,83 +16,45 @@
     /* border: 1px solid red; */
 }
 .register2 > h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     margin-top: 50px;
+    text-align: center;
 }
 .register2 > p {
-    margin-top: -15px;
+    margin-top: 15px;
     font-size: 18px;
+    text-align: center;
 }
 .register3 {
     width: 100%;
-    height: 50px;
-    border: 1px solid gray;
+    height: 60px;
     margin-top: 30px;
-    opacity: 0.5;
-}
-.register3 > input {
-    text-align: left;
-    margin-top: 12px;
-    font-size: 18px;
-    color: black;
-    margin-left: 15px;
-    margin-right: 150px;
-    border: none;
-    outline: none;
+    font-size: 22px;
+    padding-left: 10px;
 }
 .register4 {
     width: 100%;
-    height: 50px;
-    border: 1px solid gray;
+    height: 60px;
     margin-top: 30px;
-    opacity: 0.5;
-}
-.register4 > input {
-    text-align: left;
-    margin-top: 12px;
-    font-size: 18px;
-    color: black;
-    margin-left: 15px;
-    margin-right: 150px;
-    border: none;
-    outline: none;
+    font-size: 22px;
+    padding-left: 10px;
 }
 .register5 {
     width: 100%;
-    height: 50px;
-    border: 1px solid gray;
+    height: 60px;
     margin-top: 30px;
-    opacity: 0.5;
-}
-.register5 > input {
-    text-align: left;
-    margin-top: 12px;
-    font-size: 18px;
-    color: black;
-    margin-left: 15px;
-    margin-right: 150px;
-    border: none;
-    outline: none;
+    font-size: 22px;
+    padding-left: 10px;
 }
 .register6 {
     width: 100%;
-    height: 50px;
-    border: 1px solid gray;
+    height: 60px;
     margin-top: 30px;
-    opacity: 0.5;
+    font-size: 22px;
+    padding-left: 10px;
 }
-.register6 > input {
-    text-align: left;
-    margin-top: 12px;
-    font-size: 18px;
-    color: black;
-    margin-left: 15px;
-    margin-right: 150px;
-    border: none;
-    outline: none;
-}
-.register2 > button {
+.register10 {
     width: 80px;
     height: 40px;
     background-color: #1A73E8;
@@ -110,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    margin-top: 10px;
 }
 .register8 {
     width: 44%;

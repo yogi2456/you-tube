@@ -1,30 +1,24 @@
 import React from 'react'
-import './Register.css'
 import { useNavigate } from 'react-router-dom'
+import './Register.css'
 
-function Register() {
+const Register = () => {
 
   const router = useNavigate();
   return (
-    <div>
-      <div className='register'>
+    <>
+    <div className='register'>
         <div className='register1'>
             <div className='register2'>
             <h2>Create a Google Account</h2>
             <p>Enter your name</p>
-            <div className='register3'>
-                <input placeholder='First name'/>
-            </div>
-            <div className='register4'>
-                <input placeholder='Last name (Optional)'/>
-            </div>
-            <div className='register5'>
-                <input placeholder='Email or phone'/>
-            </div>
-            <div className='register6'>
-                <input placeholder='Password'/>
-            </div>
-            <button onClick={ () => router(`/login`)}>Create</button>
+            <form>
+            <input className='register3' placeholder='First name'/> <br/>
+            <input className='register4' placeholder='Last name (Optional)'/> <br/>
+            <input className='register5' placeholder='Email or phone'/> <br/>
+            <input className='register6' placeholder='Password'/> <br/>
+            <button className='register10' onClick={ () => router(`/login`)}>Create</button>
+            </form>
             </div>
         </div>
 
@@ -39,9 +33,8 @@ function Register() {
                 <p>Terms</p>
             </div>
         </div>
-
-      </div>
-    </div>
+    </div>    
+    </>
   )
 }
 
