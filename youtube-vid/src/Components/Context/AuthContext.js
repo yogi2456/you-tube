@@ -1,4 +1,6 @@
-import { createContext, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
+import toast from "react-hot-toast";
+import api from "../../helpers/AxiosConfig";
 
 
 export const AuthContext = createContext();
@@ -26,8 +28,28 @@ const ParentAuthContext = ({children}) => {
     }
 
     const Logout = () => {
+        localStorage.removeItem("my-token")
         dispatch({type: "LOGOUT"})
+        toast.success("Logout successful..")
     }
+
+    useEffect(() => {
+
+        async function getCurrentUser() {
+            try {
+                const response = await api.post("/auth/get-current-user", {token});
+                if(response.data.success) {
+                    Login(response.data.user)
+                }
+            } catch (error) {
+                toast.error(error.response.data.message)
+            }
+        }
+        const token = JSON.parse(localStorage.getItem("my-token"))
+        if(token) {
+            getCurrentUser();
+        }
+    }, [])
     return (
         <AuthContext.Provider value={{state, Login, Logout}}>
             {children}

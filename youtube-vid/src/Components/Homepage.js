@@ -108,10 +108,12 @@ function Homepage() {
                 <i class="fa-regular fa-bell fa-xl" style={{color: "#dbdbdc"}}></i>
             </div>
             {state?.user?.id ? <>
-                <div onClick={Logout}>Logout</div>
             </> :<div onClick={() => router(`/login`)} className='navbar5'>
               <i class="fa-solid fa-user" style={{color: "#fafcff"}}></i>
             </div>}
+            <button className='logout' onClick={Logout}>
+              Logout
+            </button>
             </div>
 
             <div className='navbar6'>

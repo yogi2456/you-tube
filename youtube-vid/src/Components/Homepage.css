@@ -277,3 +277,12 @@
     text-align: left;
     margin-left: 50px;
 }
+.logout {
+    color: white;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    height: 20px;
+}
