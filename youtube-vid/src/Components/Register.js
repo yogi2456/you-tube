@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Register.css'
 import toast from 'react-hot-toast';
-import axios from 'axios';
+//import axios from 'axios';
+import api from '../helpers/AxiosConfig';
 
 const Register = () => {
 
@@ -14,30 +15,32 @@ const Register = () => {
         setUserData({...userData, [event.target.name]: event.target.value})
     }
 
-    const handleForm = async (event) => {
+    const sendDataToBackend = async (event) => {
         event.preventDefault();
-        if(userData.name && userData.email && userData.password) {
-           if(userData.password.length >= 8) {
+        // alert("Data submitted to backend..")
+        if (userData.name && userData.email && userData.password) {
+          if (userData.password.length >= 8) {
             try {
-                const response = await axios.post("http://localhost:8000/api/v2/auth/register", { userData });
-                if(response.data.success) {
-                    toast.success("Account created successfully")
-                    setUserData({name: "", email: "", password: ""})
-                    router('/login')
-                } else {
-                    throw new Error("Something went wrong...")
-                  }
+              const response = await api.post("/auth/register", { userData });
+              // const response = { data: { success: true } };
+              if (response.data.success) {
+                toast.success("Registeration successfull.")
+                setUserData({ name: "", email: "", password: "" })
+                router("/login")
+              } else {
+                throw new Error("Something went wrong..")
+              }
             } catch (error) {
-                toast.error(error?.message)
-                console.log(error, "error here")
+              toast.error(error?.message)
+              console.log(error, "error here")
             }
-           } else {
-            toast.error("password should be 8 digits")
-           }
+          } else {
+            alert("Password must be 8 digit.")
+          }
         } else {
-            toast.error("please fill all the values")
+          alert("Please fill the all values..")
         }
-    }
+      }
 
   return (
     <>
@@ -46,11 +49,11 @@ const Register = () => {
             <div className='register2'>
             <h2>Create a Google Account</h2>
             <p>Enter your name</p>
-            <form onSubmit={handleForm}>
+            <form onSubmit={sendDataToBackend }>
             <input className='register3' placeholder='First name' name='name' type='text' onChange={handleChange}/> <br/>
             <input className='register5' placeholder='Email or phone' name='email' type='email' onChange={handleChange}/> <br/>
             <input className='register6' placeholder='Password' name='password' type='password' onChange={handleChange}/> <br/>
-            <button className='register10' type='submit'>Sign in</button>
+            <input className='register10' type='submit' value="Signin"/>
             </form>
             </div>
         </div>
