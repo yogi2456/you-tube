@@ -33,13 +33,13 @@
     font-size: 22px;
     padding-left: 10px;
 }
-.register4 {
+/* .register4 {
     width: 100%;
     height: 60px;
     margin-top: 30px;
     font-size: 22px;
     padding-left: 10px;
-}
+} */
 .register5 {
     width: 100%;
     height: 60px;
@@ -71,7 +71,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    margin-top: 10px;
 }
 .register8 {
     width: 44%;

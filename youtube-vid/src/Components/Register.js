@@ -8,7 +8,7 @@ const Register = () => {
 
     const router = useNavigate();
 
-    const [userData, setUserData] = useState({name: "", lastname: "", email: "", password: ""});
+    const [userData, setUserData] = useState({name: "", email: "", password: ""});
 
     const handleChange = (event) => {
         setUserData({...userData, [event.target.name]: event.target.value})
@@ -16,24 +16,17 @@ const Register = () => {
 
     const handleForm = async (event) => {
         event.preventDefault();
-        if(userData.name && userData.lastname && userData.email && userData.password) {
+        if(userData.name && userData.email && userData.password) {
            if(userData.password.length >= 8) {
             try {
-                // const response = await axios.post("http://localhost:8000/api/v2/auth/register", { userData });
-                // if(response.data.success) {
-                //     toast.success("Account created successfully")
-                //     setUserData({name: "", lastname: "", email: "", password: ""})
-                //     router('/login')
-                
-                const response = { data: {success: true}};
+                const response = await axios.post("http://localhost:8000/api/v2/auth/register", { userData });
                 if(response.data.success) {
-                    alert("register success")
-                    setUserData({name: '', email: '', password: ''});
+                    toast.success("Account created successfully")
+                    setUserData({name: "", email: "", password: ""})
                     router('/login')
-                }
-                // } else {
-                //     throw new Error("Something went wrong...")
-                //   }
+                } else {
+                    throw new Error("Something went wrong...")
+                  }
             } catch (error) {
                 toast.error(error?.message)
                 console.log(error, "error here")
@@ -55,7 +48,6 @@ const Register = () => {
             <p>Enter your name</p>
             <form onSubmit={handleForm}>
             <input className='register3' placeholder='First name' name='name' type='text' onChange={handleChange}/> <br/>
-            <input className='register4' placeholder='Last name (Optional)' name='lastname' type='text' onChange={handleChange}/> <br/>
             <input className='register5' placeholder='Email or phone' name='email' type='email' onChange={handleChange}/> <br/>
             <input className='register6' placeholder='Password' name='password' type='password' onChange={handleChange}/> <br/>
             <button className='register10' type='submit'>Sign in</button>

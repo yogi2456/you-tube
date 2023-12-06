@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
 import toast from 'react-hot-toast';
-// import axios from 'axios';
+import axios from 'axios';
 
 const Login = () => {
 
@@ -19,21 +19,14 @@ const Login = () => {
         if(userData.email && userData.password) {
            if(userData.password.length >= 8) {
             try {
-                // const response = await axios.post("http://localhost:8000/api/v2/auth/register", { userData });
-                // if(response.data.success) {
-                //     toast.success("Account created successfully")
-                //     setUserData({ email: "", password: ""})
-                //     router('/login')
-                
-                const response = { data: {success: true}};
+                const response = await axios.post("http://localhost:8000/api/v2/auth/login", { userData });
                 if(response.data.success) {
-                    alert("login success")
-                    setUserData({ email: '', password: ''});
+                    toast.success("Login successfully")
+                    setUserData({ email: "", password: ""})
                     router('/')
-                }
-                // } else {
-                //     throw new Error("Something went wrong...")
-                //   }
+                } else {
+                    throw new Error("Something went wrong...")
+                  }
             } catch (error) {
                 toast.error(error?.message)
                 console.log(error, "error here")

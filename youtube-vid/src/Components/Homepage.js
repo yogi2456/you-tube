@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Homepage.css'
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from './Context/AuthContext';
 
 function Homepage() {
+
+  const { state, Logout } = useContext(AuthContext);
 
   const router = useNavigate();
 
@@ -104,9 +107,11 @@ function Homepage() {
             <div className='navbar4'>
                 <i class="fa-regular fa-bell fa-xl" style={{color: "#dbdbdc"}}></i>
             </div>
-            <div onClick={() => router(`/login`)} className='navbar5'>
+            {state?.user?.id ? <>
+                <div onClick={Logout}>Logout</div>
+            </> :<div onClick={() => router(`/login`)} className='navbar5'>
               <i class="fa-solid fa-user" style={{color: "#fafcff"}}></i>
-            </div>
+            </div>}
             </div>
 
             <div className='navbar6'>
