@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
 import toast from 'react-hot-toast';
-import axios from 'axios';
+//import axios from 'axios';
+import api from '../helpers/AxiosConfig';
 
 const Login = () => {
 
@@ -19,7 +20,7 @@ const Login = () => {
         if(userData.email && userData.password) {
            if(userData.password.length >= 8) {
             try {
-                const response = await axios.post("http://localhost:8000/api/v2/auth/login", { userData });
+                const response = await api.post("/auth/login", { userData });
                 if(response.data.success) {
                     toast.success("Login successfully")
                     setUserData({ email: "", password: ""})
